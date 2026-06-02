@@ -14,7 +14,7 @@ pipeline{
         stage('kube'){
             steps{
                 bat '''
-                kubectl --kubeconfig=C:\\Users\\Alekhya\\.kube\\config apply -f k8s/ --validate=false
+                kubectl --kubeconfig=C:\\Users\\Alekhya\\.kube\\config apply -f deployment.yaml/ --validate=false
                 '''
             }
         }
